@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CHAF Event Platform Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* Foundation Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    /* CHAF Primary - Professional Blue */
+    --primary: 220 91% 29%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 220 91% 45%;
+    
+    /* CHAF Secondary - Warm Orange */
+    --secondary: 21 91% 48%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 21 91% 65%;
+
+    /* Success & Action Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 220 91% 95%;
+    --accent-foreground: 220 91% 29%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 220 91% 29%;
+
+    /* Custom Design Tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(220 91% 29%), hsl(21 91% 48%));
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 91% 98%));
+    --section-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 91% 98%));
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(220 91% 29% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(220 91% 29% / 0.12);
+    --shadow-strong: 0 8px 32px hsl(220 91% 29% / 0.16);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    --radius: 0.5rem;
+
+    /* Sidebar Colors */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 91% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 91% 4%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 91% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 220 91% 29%;
+    --primary-light: 220 91% 85%;
+    
+    --secondary: 21 91% 48%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 21 91% 65%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 32% 17%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 220 91% 29%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
